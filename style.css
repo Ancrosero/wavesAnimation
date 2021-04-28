@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff9ff3;
+    color: #0abde3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;    
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* thi is to make the grid even on both sides*/
+	align-items: center;
+	justify-content: center;
+    width: 450px;
+}
+
+.circle {
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 6px;
+    transition: transform 0.3s linear;
+}
+
+.circle.grow{
+    transform: scale(2);
+}
